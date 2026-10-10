@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f0eee6">
+  <meta name="theme-color" content="#faf9f5">
   <meta name="description" content="A data science project by Sitt Min Thar: a teacher-reviewed student support queue, tested on 100,000 exam records. Explore the evidence, capacity tradeoffs, notebook, and code.">
   <meta property="og:title" content="Student Support Queue | Sitt Min Thar">
   <meta property="og:description" content="From exam records to a practical support decision. An executed notebook, measured results, and an interactive capacity explorer.">
@@ -15,26 +15,26 @@
   <link rel="preload" href="assets/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/editorial.css">
+  <link rel="stylesheet" href="assets/editorial.css?v=2">
   <script src="assets/app.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header wrap">
-    <a class="identity" href="https://github.com/SmtTheSE" aria-label="Sitt Min Thar on GitHub"><span>STUDENT SUPPORT<span class="identity-sub">A project by Sitt Min Thar</span></span></a>
+    <a class="identity" href="https://github.com/SmtTheSE" aria-label="Sitt Min Thar on GitHub"><span>Student Support<span class="identity-sub">A project by Sitt Min Thar</span></span></a>
     <nav aria-label="Main navigation"><a href="#evidence">Evidence</a><a href="#product">Product</a><a href="#resources">Notebook &amp; code</a></nav>
-    <a class="header-link" href="https://github.com/SmtTheSE/student-support-queue">View project <span aria-hidden="true">↗</span></a>
+    <a class="header-link" href="https://github.com/SmtTheSE/student-support-queue">View project</a>
   </header>
   <main id="main">
     <section class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">Data science / Education</p>
-        <h1 id="hero-title">Student <a href="#product">support</a> that starts <a href="#evidence">before the exam.</a></h1>
+        <p class="eyebrow">Education / Applied data science</p>
+        <h1 id="hero-title">Support students.<br>Before the exam.</h1>
       </div>
       <div class="hero-intro">
-        <p class="lead">A practical answer to a difficult question: when teachers have limited time, which students should they contact first?</p>
-        <p class="hero-detail">Student Support Queue turns exam and study records into a teacher-reviewed priority list. Built from 100,000 records, evaluated against a simple administrative baseline, and connected to a real support workflow.</p>
-        <div class="actions"><a class="button primary" href="#evidence">Explore the results <span aria-hidden="true">↓</span></a><a class="button text-button" href="downloads/student_support_queue.ipynb" download>Download notebook <span aria-hidden="true">↗</span></a></div>
+        <p class="lead">When teachers have limited time, which students should they contact first?</p>
+        <p class="hero-detail">A teacher-reviewed priority list built from 100,000 exam and study records. Explore the evidence, choose a support capacity, and see how the decision changes.</p>
+        <div class="actions"><a class="button primary" href="#evidence">Explore the results</a><a class="button text-button" href="downloads/student_support_queue.ipynb" download>Download notebook</a></div>
       </div>
     </section>
     <section class="result-feature wrap" aria-label="Featured project result">
@@ -73,7 +73,7 @@
             <div class="explorer-metrics"><div><span>Failures reached</span><strong id="failures-reached">1,353</strong><small id="extra-reached">191 more than the administrative baseline</small></div><div><span>Queue precision</span><strong id="queue-precision">67.7%</strong><small>Selected students who later failed</small></div><div><span>Failure recall</span><strong id="failure-recall">29.9%</strong><small>All recorded failures included in the queue</small></div></div>
             <div class="comparison-layout"><div><h3>Students who failed, included in each queue</h3><div id="comparison-bars" class="comparison-bars"></div></div><div class="remaining"><span class="eyebrow">Outside the queue</span><strong id="failures-outside">3,169</strong><p>Students who failed but were outside capacity. Teacher referrals and wider support remain necessary.</p></div></div>
           </div>
-          <div class="explorer-foot"><span>At 10% capacity, precision is 65.7%–69.7% in the record-bootstrap 95% interval.</span><a href="https://github.com/SmtTheSE/student-support-queue/blob/main/outputs/student_support/capacity_sensitivity.csv">Inspect the underlying table <span aria-hidden="true">↗</span></a></div>
+          <div class="explorer-foot"><span>At 10% capacity, precision is 65.7%–69.7% in the record-bootstrap 95% interval.</span><a href="https://github.com/SmtTheSE/student-support-queue/blob/main/outputs/student_support/capacity_sensitivity.csv">Inspect the underlying table</a></div>
           <p id="data-status" class="data-status" role="status"></p>
           <noscript><p class="panel-note">The default 10% result is shown above. Enable JavaScript to explore other capacity levels, or read the notebook.</p></noscript>
         </div>
@@ -84,24 +84,24 @@
     <section id="product" class="product-section wrap section" aria-labelledby="product-title">
       <div class="section-heading"><div><p class="eyebrow">03 / From prediction to action</p><h2 id="product-title">A worklist someone can use.</h2></div><p>The model gives a priority.<br>The teacher and student agree on the support.</p></div>
       <div class="workflow"><article><span class="step-number">01</span><h3>Freeze the snapshot</h3><p>Use previous achievement, attendance, assignments, and verified study measurements recorded before the exam.</p></article><article><span class="step-number">02</span><h3>Set available slots</h3><p>Rank the cohort by estimated failure risk. Capacity comes from staff time, not a default probability threshold.</p></article><article><span class="step-number">03</span><h3>Review the need</h3><p>Check learning gaps, incomplete assignments, and attendance barriers. Offer a printed or in-person route when needed.</p></article><article><span class="step-number">04</span><h3>Follow through</h3><p>Record contact, participation, completion, exam outcomes, and cost. Learn whether support makes a difference.</p></article></div>
-      <div class="product-detail"><div><h3>A small, practical output</h3><p>The scoring tool accepts an unlabeled pre-exam CSV and a slot count. It validates the records and creates a ranked teacher worklist with recorded support needs, access considerations, and missing-input counts.</p><a class="inline-link" href="https://github.com/SmtTheSE/student-support-queue/blob/main/outputs/student_support/score_students.py">Read the scoring implementation <span aria-hidden="true">↗</span></a></div><div class="code-panel"><div class="code-header">Local scoring workflow</div><pre><code>python score_students.py \
+      <div class="product-detail"><div><h3>A small, practical output</h3><p>The scoring tool accepts an unlabeled pre-exam CSV and a slot count. It validates the records and creates a ranked teacher worklist with recorded support needs, access considerations, and missing-input counts.</p><a class="inline-link" href="https://github.com/SmtTheSE/student-support-queue/blob/main/outputs/student_support/score_students.py">Read the scoring implementation</a></div><div class="code-panel"><div class="code-header">Local scoring workflow</div><pre><code>python score_students.py \
   --input pre_exam_snapshot.csv \
   --slots 25 \
   --output teacher_worklist.csv</code></pre><p>Teacher review is required before support is assigned.</p></div></div>
     </section>
 
-    <section class="impact-section section" aria-labelledby="impact-title"><div class="wrap impact-layout"><div><p class="eyebrow">04 / Business impact</p><h2 id="impact-title">Better reach is measured.<br>Better outcomes must be tested.</h2><p>At 10% capacity, the queue reaches 16.4% more recorded failures than the administrative baseline using the same number of slots.</p><p>Program economics depend on actual participation, intervention effectiveness, and delivery cost. The notebook makes these assumptions explicit instead of presenting them as observed savings.</p></div><aside class="scenario"><span class="eyebrow">Illustrative scenario / 1,000 students</span><h3>100 support offers</h3><dl><div><dt>Participation assumption</dt><dd>70%</dd></div><div><dt>Prevention among reached failures</dt><dd>10%</dd></div><div><dt>Program cost assumption</dt><dd>5,500 units</dd></div><div class="scenario-result"><dt>Estimated failures prevented</dt><dd>4.7</dd></div></dl><p>Scenario only. Uses heldout queue precision, 1,500 setup units, and 40 units per offered slot. The CSV contains no measured intervention effect.</p><a class="inline-link" href="https://github.com/SmtTheSE/student-support-queue/blob/main/outputs/student_support/business_scenarios.csv">Inspect every assumption <span aria-hidden="true">↗</span></a></aside></div></section>
+    <section class="impact-section section" aria-labelledby="impact-title"><div class="wrap impact-layout"><div><p class="eyebrow">04 / Business impact</p><h2 id="impact-title">Better reach is measured.<br>Better outcomes must be tested.</h2><p>At 10% capacity, the queue reaches 16.4% more recorded failures than the administrative baseline using the same number of slots.</p><p>Program economics depend on actual participation, intervention effectiveness, and delivery cost. The notebook makes these assumptions explicit instead of presenting them as observed savings.</p></div><aside class="scenario"><span class="eyebrow">Illustrative scenario / 1,000 students</span><h3>100 support offers</h3><dl><div><dt>Participation assumption</dt><dd>70%</dd></div><div><dt>Prevention among reached failures</dt><dd>10%</dd></div><div><dt>Program cost assumption</dt><dd>5,500 units</dd></div><div class="scenario-result"><dt>Estimated failures prevented</dt><dd>4.7</dd></div></dl><p>Scenario only. Uses heldout queue precision, 1,500 setup units, and 40 units per offered slot. The CSV contains no measured intervention effect.</p><a class="inline-link" href="https://github.com/SmtTheSE/student-support-queue/blob/main/outputs/student_support/business_scenarios.csv">Inspect every assumption</a></aside></div></section>
 
     <section class="method-section wrap section" aria-labelledby="method-title">
-      <div class="section-heading"><div><p class="eyebrow">05 / Evidence you can inspect</p><h2 id="method-title">Built to make the claim traceable.</h2></div><a class="inline-link" href="https://github.com/SmtTheSE/student-support-queue/blob/main/outputs/student_support/student_support_queue.ipynb">Read the executed notebook <span aria-hidden="true">↗</span></a></div>
+      <div class="section-heading"><div><p class="eyebrow">05 / Evidence you can inspect</p><h2 id="method-title">Built to make the claim traceable.</h2></div><a class="inline-link" href="https://github.com/SmtTheSE/student-support-queue/blob/main/outputs/student_support/student_support_queue.ipynb">Read the executed notebook</a></div>
       <div class="method-grid"><article><h3>Leakage prevention</h3><p>Current-exam scores, grades, answer counts, and outcome labels never enter scoring. Ambiguous timing fields are excluded. Pre-exam availability remains a condition for use.</p></article><article><h3>Separate evaluation</h3><p>60% training, 10% calibration, 10% selection, and 20% testing. Baseline comparisons use identical slot counts. Bootstrap intervals show sampling uncertainty.</p></article><article><h3>Group-level checks</h3><p>Gender and socioeconomic fields are excluded from ranking. Errors and selection rates are audited by group; excluding a field alone does not establish fairness.</p></article></div>
       <div class="figure-grid"><figure><img src="assets/feature_importance.png" alt="Selection-set permutation analysis: previous exam score, study hours, practice tests, and attendance carry the most ranking information." loading="lazy" width="1064" height="464"><figcaption>What the ranking relies on. Association does not establish a treatment effect.</figcaption></figure><figure><img src="assets/capacity_and_calibration.png" alt="Heldout analysis: failure recall rises with capacity, and calibrated probabilities broadly match observed failure rates." loading="lazy" width="1424" height="464"><figcaption>Staffing tradeoffs and probability calibration on heldout records.</figcaption></figure></div>
       <div class="scope-note"><h3>Where the evidence stops</h3><p>The source and collection times are unverified. There are no school IDs, subjects, exam dates, or intervention outcomes. A random holdout measures this file’s patterns; it does not establish results in future exams or new schools. A prospective local pilot is the next decision.</p></div>
-      <div class="sources"><span>Education evidence behind the workflow</span><a href="https://ies.ed.gov/ncee/wwc/PracticeGuide/24">IES: monitoring and individualized support <span aria-hidden="true">↗</span></a><a href="https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/one-to-one-tuition">EEF: targeted tuition <span aria-hidden="true">↗</span></a></div>
+      <div class="sources"><span>Education evidence behind the workflow</span><a href="https://ies.ed.gov/ncee/wwc/PracticeGuide/24">IES: monitoring and individualized support</a><a href="https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/one-to-one-tuition">EEF: targeted tuition</a></div>
     </section>
 
-    <section id="resources" class="resources-section wrap section" aria-labelledby="resources-title"><div><p class="eyebrow">06 / Explore the project</p><h2 id="resources-title">From raw records<br>to a support decision.</h2><p>The analysis, evidence, model, and scoring workflow are available for inspection.</p></div><div class="resource-links"><a href="downloads/student_support_queue.ipynb" download><div><h3>Executed Kaggle notebook</h3><p>Import the notebook and attach the authorized CSV.</p></div><span aria-hidden="true">↗</span></a><a href="https://github.com/SmtTheSE/student-support-queue"><div><h3>Source repository</h3><p>Code, model artifacts, aggregate evidence, and reproduction steps.</p></div><span aria-hidden="true">↗</span></a><a href="downloads/student_support_product.zip" download><div><h3>Complete product package</h3><p>Notebook, scoring tool, trained model, and results.</p></div><span aria-hidden="true">↗</span></a></div></section>
+    <section id="resources" class="resources-section wrap section" aria-labelledby="resources-title"><div><p class="eyebrow">06 / Explore the project</p><h2 id="resources-title">From raw records<br>to a support decision.</h2><p>The analysis, evidence, model, and scoring workflow are available for inspection.</p></div><div class="resource-links"><a href="downloads/student_support_queue.ipynb" download><div><h3>Executed Kaggle notebook</h3><p>Import the notebook and attach the authorized CSV.</p></div></a><a href="https://github.com/SmtTheSE/student-support-queue"><div><h3>Source repository</h3><p>Code, model artifacts, aggregate evidence, and reproduction steps.</p></div></a><a href="downloads/student_support_product.zip" download><div><h3>Complete product package</h3><p>Notebook, scoring tool, trained model, and results.</p></div></a></div></section>
   </main>
-  <footer class="site-footer wrap"><p>Student Support Queue <span class="footer-divider">/</span> A project by Sitt Min Thar</p><a href="https://github.com/SmtTheSE">More projects on GitHub <span aria-hidden="true">↗</span></a></footer>
+  <footer class="site-footer wrap"><p>Student Support Queue <span class="footer-divider">/</span> A project by Sitt Min Thar</p><a href="https://github.com/SmtTheSE">More projects on GitHub</a></footer>
 </body>
 </html>

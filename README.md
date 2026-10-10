@@ -75,7 +75,7 @@ Use the [blank input template](outputs/student_support/scoring_input_template.cs
 
 The buildless website lives in `docs/` and is published by GitHub Pages from `main:/docs`. It includes an interactive explorer backed by aggregate heldout results, direct notebook downloads, the product workflow, and a business scenario with explicit assumptions.
 
-The presentation takes inspiration from Anthropic's warm editorial website: cream backgrounds, bold sans-serif headlines, serif reading text, rounded panels, and restrained navigation. Inter and Source Serif 4 are hosted locally under the SIL Open Font License; licenses are included in `docs/assets/fonts/`. The site retains its own project identity.
+The presentation takes inspiration from Anthropic and Claude's public websites: warm off-white backgrounds, serif headlines, sans-serif reading text, compact text-only controls, and restrained navigation. Inter and Source Serif 4 are hosted locally under the SIL Open Font License; licenses are included in `docs/assets/fonts/`. Reference details are recorded in `docs/DESIGN.md`.
 
 Preview locally:
 
