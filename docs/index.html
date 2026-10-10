@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f6f5f0">
+  <meta name="theme-color" content="#f0eee6">
   <meta name="description" content="A data science project by Sitt Min Thar: a teacher-reviewed student support queue, tested on 100,000 exam records. Explore the evidence, capacity tradeoffs, notebook, and code.">
   <meta property="og:title" content="Student Support Queue | Sitt Min Thar">
   <meta property="og:description" content="From exam records to a practical support decision. An executed notebook, measured results, and an interactive capacity explorer.">
@@ -11,31 +11,40 @@
   <meta property="og:url" content="https://smttheSE.github.io/student-support-queue/">
   <meta name="color-scheme" content="light">
   <title>Student Support Queue | Sitt Min Thar</title>
+  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/editorial.css">
   <script src="assets/app.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header wrap">
-    <a class="identity" href="https://github.com/SmtTheSE" aria-label="Sitt Min Thar on GitHub"><span class="monogram">SM</span><span>Sitt Min Thar<span class="identity-sub">Data science project</span></span></a>
+    <a class="identity" href="https://github.com/SmtTheSE" aria-label="Sitt Min Thar on GitHub"><span>STUDENT SUPPORT<span class="identity-sub">A project by Sitt Min Thar</span></span></a>
     <nav aria-label="Main navigation"><a href="#evidence">Evidence</a><a href="#product">Product</a><a href="#resources">Notebook &amp; code</a></nav>
-    <a class="header-link" href="https://github.com/SmtTheSE/student-support-queue">View repository <span aria-hidden="true">↗</span></a>
+    <a class="header-link" href="https://github.com/SmtTheSE/student-support-queue">View project <span aria-hidden="true">↗</span></a>
   </header>
   <main id="main">
     <section class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="accent-line"></span>Education / Applied machine learning</p>
-        <h1 id="hero-title">Support students.<br>Before the exam.</h1>
+        <p class="eyebrow">Data science / Education</p>
+        <h1 id="hero-title">Student <a href="#product">support</a> that starts <a href="#evidence">before the exam.</a></h1>
+      </div>
+      <div class="hero-intro">
         <p class="lead">A practical answer to a difficult question: when teachers have limited time, which students should they contact first?</p>
         <p class="hero-detail">Student Support Queue turns exam and study records into a teacher-reviewed priority list. Built from 100,000 records, evaluated against a simple administrative baseline, and connected to a real support workflow.</p>
         <div class="actions"><a class="button primary" href="#evidence">Explore the results <span aria-hidden="true">↓</span></a><a class="button text-button" href="downloads/student_support_queue.ipynb" download>Download notebook <span aria-hidden="true">↗</span></a></div>
-        <div class="project-tags"><span>Python</span><span>scikit-learn</span><span>Decision analysis</span><span>Kaggle notebook</span></div>
       </div>
+    </section>
+    <section class="result-feature wrap" aria-label="Featured project result">
       <aside class="result-cover" aria-labelledby="result-title">
+        <div class="feature-copy">
         <div class="panel-top"><span class="eyebrow">The result</span><span class="small-label">Heldout evaluation</span></div>
         <h2 id="result-title">Same support capacity.<br>More students reached.</h2>
         <div class="hero-stat"><span>+191</span><p>additional students who failed<br>included in the support queue</p></div>
+        </div>
+        <div class="feature-evidence">
         <div class="cover-chart">
           <div class="bar-caption"><span>Administrative baseline</span><strong>1,162</strong></div>
           <div class="bar-track"><div class="bar-fill baseline" style="width:58.1%"></div></div>
@@ -44,6 +53,7 @@
           <div class="bar-axis"><span>0</span><span>2,000 support slots</span></div>
         </div>
         <p class="panel-note">20,000 test records. Identical slot counts.<br>Measures students reached, not failures prevented.</p>
+        </div>
       </aside>
     </section>
 
