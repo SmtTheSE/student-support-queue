@@ -28,6 +28,12 @@ The main comparison shows only this tool and the simpler school-record approach,
 
 The presentation uses one stylesheet, a three-step workflow, consistent reading widths, and short paragraphs. Notebook and model artifacts retain the full technical analysis.
 
+## One continuous reading column (October 10, 2026 revision)
+
+Feedback: the page was split into too many small boxes, rules, and 11–13px notes. The page now has four sections in one 720px column: the problem and how it works, the results, what a school should check next, and the files. Spacing separates ideas instead of borders and cards. Body text is 18px (17px on phones) and nothing is below 14px.
+
+The only boxed element is the results explorer. It replaces the three number tiles, context box, outside-list box, and test-note strip with a slider, two proportional bars (students who later did not pass, out of the same places), and one sentence. The caveats sit below it as plain paragraphs under "How to read this" and "What this does not show". The three optional detail panels remain, grouped under "Want more detail?".
+
 ## Student mascot
 
 The hero pairs its plain-language introduction with an original Blender character: a student holding a notebook and waving. Chestnut hair, an oatmeal cardigan, a sage skirt, and a terracotta notebook follow the existing warm palette. The pale oval background is CSS so the transparent render sits naturally on the page.

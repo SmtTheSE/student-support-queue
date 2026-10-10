@@ -25,8 +25,14 @@ function renderCapacity() {
   setText('slot-count', `${places} places for ${number.format(testCount)} students`);
   setText('failures-reached', number.format(selected.failures_in_queue));
   setText('baseline-count', number.format(simpler.failures_in_queue));
-  setText('extra-count', `${extra >= 0 ? '+' : ''}${number.format(extra)}`);
-  setText('result-story', `This tool included ${number.format(extra)} more students who later did not pass, using the same ${places} places.`);
+  document.getElementById('bar-tool').style.width = `${(selected.failures_in_queue / selected.slots) * 100}%`;
+  document.getElementById('bar-simple').style.width = `${(simpler.failures_in_queue / simpler.slots) * 100}%`;
+  const story = document.getElementById('result-story');
+  story.replaceChildren(
+    'This tool included ',
+    Object.assign(document.createElement('strong'), { id: 'extra-count', textContent: number.format(Math.abs(extra)) }),
+    ` ${extra >= 0 ? 'more' : 'fewer'} students who later did not pass, using the same ${places} places.`
+  );
   setText('failures-outside', number.format(selected.failures_outside_queue));
   setText('queue-precision', percent(selected.precision_at_capacity));
   setText('failure-recall', percent(selected.recall_at_capacity));

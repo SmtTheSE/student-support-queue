@@ -14,186 +14,180 @@
   <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/style.css?v=4">
-  <script src="assets/app.js?v=3" defer></script>
+  <link rel="stylesheet" href="assets/style.css?v=5">
+  <script src="assets/app.js?v=4" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header wrap">
-    <a class="identity" href="https://github.com/SmtTheSE" aria-label="Sitt Min Thar on GitHub">Student Support<span>A project by Sitt Min Thar</span></a>
+    <a class="identity" href="#top" aria-label="Student Support Queue, back to top">Student Support<span>A project by Sitt Min Thar</span></a>
     <nav aria-label="Main navigation">
-      <a href="#product">How it works</a>
-      <a href="#evidence">Results</a>
-      <a href="#resources">Project files</a>
+      <a href="#how">How it works</a>
+      <a href="#results">Results</a>
+      <a href="#next">Next steps</a>
+      <a href="#files">Files</a>
     </nav>
     <a class="button primary header-link" href="https://github.com/SmtTheSE/student-support-queue">View code</a>
   </header>
 
   <main id="main">
-    <section class="hero wrap" aria-labelledby="hero-title">
+    <section id="top" class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">A project for student support</p>
-        <h1 id="hero-title">Who might need help<br>before the exam?</h1>
-        <p class="lead">This tool helps teachers choose which students to talk to first, using past school and study records.</p>
-        <p class="hero-note">Teachers review the list and decide what help to offer.</p>
+        <h1 id="hero-title">Who might need help before the exam?</h1>
+        <p class="lead">This tool helps teachers choose which students to talk to first, using past school and study records. Teachers review the list and decide what help to offer.</p>
         <div class="actions">
-          <a class="button primary" href="#product">See how it works</a>
-          <a class="button secondary" href="#evidence">See the results</a>
+          <a class="button primary" href="#how">See how it works</a>
+          <a class="button secondary" href="#results">See the results</a>
         </div>
-        <p class="project-status">An early version built from 100,000 saved exam records.</p>
+        <p class="project-status">An early version, built and tested on 100,000 saved exam records.</p>
       </div>
       <figure class="hero-mascot">
         <img src="assets/student-mascot.webp" width="1000" height="1200" alt="A friendly student mascot holding a notebook and waving hello." fetchpriority="high">
       </figure>
     </section>
 
-    <section class="story-section section wrap" aria-labelledby="problem-title">
-      <div class="section-title">
-        <p class="eyebrow">01 / The problem</p>
-        <h2 id="problem-title">Teachers have limited time.<br>Students still need help.</h2>
-      </div>
-      <div class="reading-copy">
-        <p>A teacher may have time for only a few check-ins or tutoring sessions. Waiting for exam results can mean finding a problem too late.</p>
-        <p>The idea is simple: use earlier records to suggest which students may need a conversation first.</p>
-      </div>
-    </section>
+    <section id="how" class="section column" aria-labelledby="how-title">
+      <h2 id="how-title">Teachers have limited time. Students still need help.</h2>
+      <p class="intro">A teacher may only have time for a few check-ins or tutoring sessions, and waiting for exam results can mean finding a problem too late. This tool suggests who to talk to first, so that limited time goes further.</p>
 
-    <section id="product" class="section wrap" aria-labelledby="product-title">
-      <div class="section-heading">
-        <p class="eyebrow">02 / How it works</p>
-        <h2 id="product-title">Three steps, with a teacher in charge.</h2>
-        <p>The tool suggests a list. People decide what happens next.</p>
-      </div>
-      <ol class="workflow">
+      <h3 class="subhead">How it works</h3>
+      <ol class="steps">
         <li>
           <span class="step-number" aria-hidden="true">1</span>
-          <h3>Use past records</h3>
-          <p>Bring previous results, attendance, completed assignments, and study habits. These records must come from before the exam.</p>
+          <div>
+            <h4>It reads past records</h4>
+            <p>Previous results, attendance, completed assignments, and study habits. These must come from before the exam.</p>
+          </div>
         </li>
         <li>
           <span class="step-number" aria-hidden="true">2</span>
-          <h3>Choose how many you can help</h3>
-          <p>Set the number of available places. The tool suggests students who appear most likely to struggle in the exam.</p>
+          <div>
+            <h4>You say how many students you can help</h4>
+            <p>If you have time for 25 check-ins, the tool suggests the 25 students who appear most likely to struggle in the exam.</p>
+          </div>
         </li>
         <li>
           <span class="step-number" aria-hidden="true">3</span>
-          <h3>Review the list and offer help</h3>
-          <p>A teacher reviews each student’s situation and offers suitable help. Students can also ask for help without being on the list.</p>
+          <div>
+            <h4>A teacher reviews the list and offers help</h4>
+            <p>The tool only suggests. Teachers look at each student’s situation and decide what to do. Students can also ask for help without being on the list.</p>
+          </div>
         </li>
       </ol>
-      <div class="example-note">
-        <p class="example-label">For example</p>
-        <p>If a teacher has time for <strong>25 check-ins</strong>, the tool makes a list of <strong>25 students to review</strong>, with recorded issues to discuss.</p>
-      </div>
     </section>
 
-    <section id="evidence" class="results-section section" aria-labelledby="evidence-title">
-      <div class="wrap">
-        <div class="section-heading">
-          <p class="eyebrow">03 / The results</p>
-          <h2 id="evidence-title">What the test found.</h2>
-          <p>We tested it on 20,000 saved exam records. These records were not used to build or choose the tool.</p>
-        </div>
+    <section id="results" class="results-section section" aria-labelledby="results-title">
+      <div class="column">
+        <h2 id="results-title">Did it pick the right students?</h2>
+        <p class="intro">We tested the tool on 20,000 saved exam records that were not used to build it or choose it. For each student, we asked: did they later fail the exam? Try different list sizes below.</p>
+
         <div class="explorer">
           <div class="capacity-controls">
-            <div>
-              <label for="capacity">How many students could you help?</label>
-              <div class="capacity-value"><output id="capacity-percent" for="capacity">10%</output><span id="slot-count">2,000 places for 20,000 students</span></div>
-            </div>
-            <div class="slider-wrap">
-              <input id="capacity" type="range" min="0" max="4" step="1" value="1" aria-valuetext="10 percent: 2,000 places">
-              <div class="range-labels" aria-hidden="true"><span>5%</span><span>10%</span><span>15%</span><span>20%</span><span>30%</span></div>
-              <p class="slider-hint">Move the slider to change the number of places.</p>
-            </div>
+            <label for="capacity">How many students could you help?</label>
+            <div class="capacity-value"><output id="capacity-percent" for="capacity">10%</output><span id="slot-count">2,000 places for 20,000 students</span></div>
+            <input id="capacity" type="range" min="0" max="4" step="1" value="1" aria-valuetext="10 percent: 2,000 places">
+            <div class="range-labels" aria-hidden="true"><span>5%</span><span>10%</span><span>15%</span><span>20%</span><span>30%</span></div>
           </div>
+
           <div id="explorer-results" aria-live="polite" aria-atomic="true">
-            <div class="comparison-heading">
-              <h3>Students on each list who later did not pass</h3>
-              <p>Both lists have the same number of places.</p>
+            <p class="result-question">Of the students on each list, how many later did not pass?</p>
+            <div class="bars">
+              <div class="bar-row">
+                <div class="bar-label"><span>This tool</span><strong id="failures-reached">1,353</strong></div>
+                <div class="bar-track"><div class="bar-fill tool" id="bar-tool" style="width:67.7%"></div></div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label"><span>A simpler list</span><strong id="baseline-count">1,162</strong></div>
+                <div class="bar-track"><div class="bar-fill simple" id="bar-simple" style="width:58.1%"></div></div>
+              </div>
             </div>
-            <div class="result-numbers">
-              <div><span>This tool</span><strong id="failures-reached">1,353</strong></div>
-              <div><span>A simpler list</span><strong id="baseline-count">1,162</strong></div>
-              <div class="result-gain"><span>Extra students identified</span><strong id="extra-count">+191</strong></div>
-            </div>
-            <p id="result-story" class="result-story">This tool included 191 more students who later did not pass, using the same 2,000 places.</p>
-            <div class="result-context">
-              <p>The <strong>simpler list</strong> uses past results, attendance, and completed assignments. This tool also uses study records.</p>
-              <p>An exam score <strong>below 50</strong> counts as not passing. This matches the labels in the file.</p>
-            </div>
-            <p class="outside-note"><strong id="failures-outside">3,169</strong> students who did not pass were still outside this tool’s list. Teachers need other ways to offer help too.</p>
+            <p id="result-story" class="result-story">This tool included <strong id="extra-count">191</strong> more students who later did not pass, using the same 2,000 places.</p>
           </div>
-          <p class="test-note">This was a check using saved records. No students were contacted. It does not show that the tool improved exam results.</p>
           <p id="data-status" class="data-status" role="status"></p>
-          <noscript><p class="test-note">The 10% example is shown here. Turn on JavaScript to change the number of places.</p></noscript>
+          <noscript><p class="note">The 10% example is shown here. Turn on JavaScript to change the number of places.</p></noscript>
         </div>
 
-        <details class="detail-row">
-          <summary>See a little more about these numbers</summary>
-          <div class="detail-body">
-            <div class="extra-measures">
-              <div><strong id="queue-precision">67.7%</strong><p>of students on this tool’s list later did not pass.</p></div>
-              <div><strong id="failure-recall">29.9%</strong><p>of all students who did not pass were included on this tool’s list.</p></div>
+        <h3 class="subhead">How to read this</h3>
+        <p>Both lists have the same number of places. The <strong>simpler list</strong> uses past results, attendance, and completed assignments. This tool also uses study records. An exam score <strong>below 50</strong> counts as not passing, matching the labels in the file.</p>
+
+        <h3 class="subhead">What this does not show</h3>
+        <p>Even the better list is not complete: <strong id="failures-outside">3,169</strong> students who did not pass were still outside it, so teachers need other ways to offer help too.</p>
+        <p>This was a check using saved records. No students were contacted, and it does not show that the tool improved anyone’s exam results.</p>
+
+        <div class="more">
+          <h3 class="subhead">Want more detail?</h3>
+          <details class="detail-row">
+            <summary>A little more about these numbers</summary>
+            <div class="detail-body">
+              <p><strong id="queue-precision">67.7%</strong> of students on this tool’s list later did not pass, and <strong id="failure-recall">29.9%</strong> of all students who did not pass were included on it.</p>
+              <p>These are estimates from these records. When we repeated the calculation with different samples of the test records, the share who did not pass on the 10% list was about 66%–70% (a 95% uncertainty range).</p>
+              <a class="inline-link" href="https://github.com/SmtTheSE/student-support-queue/blob/main/outputs/student_support/capacity_sensitivity.csv">Open the full results table</a>
             </div>
-            <p>The result is an estimate from these records. When we repeated the calculation with different samples of the test records, the share who did not pass on the 10% list was about 66%–70% (a 95% uncertainty range).</p>
-            <a class="inline-link" href="https://github.com/SmtTheSE/student-support-queue/blob/main/outputs/student_support/capacity_sensitivity.csv">Open the full results table</a>
-          </div>
-        </details>
-        <details class="detail-row">
-          <summary>How did we check the tool?</summary>
-          <div class="detail-body">
-            <p>We split the 100,000 records into separate groups: 60,000 to learn patterns, 10,000 to adjust its risk estimates, 10,000 to choose the tool, and 20,000 for the final check.</p>
-            <p>The tool never sees the current exam’s results or answers when making its list. Gender and family income are also left out. We checked results across groups, but those checks do not guarantee fair decisions in every school.</p>
-            <p>Every approach was allowed the same number of places. The full analysis shows other comparisons and the checks behind the result.</p>
-            <a class="inline-link" href="https://github.com/SmtTheSE/student-support-queue/blob/main/outputs/student_support/student_support_queue.ipynb">Read the full analysis</a>
-          </div>
-        </details>
-        <details class="detail-row technical-details">
-          <summary>Charts and details for technical readers</summary>
-          <div class="detail-body">
-            <p>The selected method is calibrated logistic regression. On the final test, ROC AUC was 0.818 and the Brier score was 0.1329. Definitions, model comparisons, group checks, and uncertainty estimates are in the notebook.</p>
-            <div class="figure-grid">
-              <figure><img src="assets/feature_importance.png" alt="Chart showing which earlier records help the tool choose its list. Previous exam results and study records carry much of the information." loading="lazy" width="1064" height="464"><figcaption>Which records help the tool make its list.</figcaption></figure>
-              <figure><img src="assets/capacity_and_calibration.png" alt="Charts showing how the number of places changes how many students are included, and how estimated risks compare with saved exam results." loading="lazy" width="1424" height="464"><figcaption>List size and risk estimates, checked against exam records.</figcaption></figure>
+          </details>
+          <details class="detail-row">
+            <summary>How we checked the tool</summary>
+            <div class="detail-body">
+              <p>We split the 100,000 records into separate groups: 60,000 to learn patterns, 10,000 to adjust its risk estimates, 10,000 to choose the tool, and 20,000 for the final check.</p>
+              <p>The tool never sees the current exam’s results or answers when making its list. Gender and family income are also left out. We checked results across groups, but those checks do not guarantee fair decisions in every school.</p>
+              <p>Every approach was allowed the same number of places. The full analysis shows other comparisons and the checks behind the result.</p>
+              <a class="inline-link" href="https://github.com/SmtTheSE/student-support-queue/blob/main/outputs/student_support/student_support_queue.ipynb">Read the full analysis</a>
             </div>
-            <h3>Run the tool on your computer</h3>
-            <p>Use a CSV table with the required columns and records from before the exam. This example creates a list of 25 students for a teacher to review.</p>
-            <pre><code>python score_students.py \
+          </details>
+          <details class="detail-row technical-details">
+            <summary>Charts and details for technical readers</summary>
+            <div class="detail-body">
+              <p>The selected method is calibrated logistic regression. On the final test, ROC AUC was 0.818 and the Brier score was 0.1329. Definitions, model comparisons, group checks, and uncertainty estimates are in the notebook.</p>
+              <div class="figure-grid">
+                <figure><img src="assets/feature_importance.png" alt="Chart showing which earlier records help the tool choose its list. Previous exam results and study records carry much of the information." loading="lazy" width="1064" height="464"><figcaption>Which records help the tool make its list.</figcaption></figure>
+                <figure><img src="assets/capacity_and_calibration.png" alt="Charts showing how the number of places changes how many students are included, and how estimated risks compare with saved exam results." loading="lazy" width="1424" height="464"><figcaption>List size and risk estimates, checked against exam records.</figcaption></figure>
+              </div>
+              <h4>Run the tool on your computer</h4>
+              <p>Use a CSV table with the required columns and records from before the exam. This example creates a list of 25 students for a teacher to review.</p>
+              <pre><code>python score_students.py \
   --input pre_exam_snapshot.csv \
   --slots 25 \
   --output teacher_worklist.csv</code></pre>
-            <a class="inline-link" href="https://github.com/SmtTheSE/student-support-queue/blob/main/outputs/student_support/score_students.py">See the scoring code and required inputs</a>
+              <a class="inline-link" href="https://github.com/SmtTheSE/student-support-queue/blob/main/outputs/student_support/score_students.py">See the scoring code and required inputs</a>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="next" class="section column" aria-labelledby="next-title">
+      <h2 id="next-title">A school would need to try it carefully.</h2>
+      <p class="intro">A better list could help staff use their time well. A school would still need to check whether the help actually improves students’ results. Three things to do first:</p>
+      <ol class="steps plain">
+        <li>
+          <span class="step-number" aria-hidden="true">1</span>
+          <div>
+            <h4>Check where the records came from</h4>
+            <p>The source and dates of this file are unverified. A school must confirm that its own records are reliable and were collected before the exam.</p>
           </div>
-        </details>
-      </div>
+        </li>
+        <li>
+          <span class="step-number" aria-hidden="true">2</span>
+          <div>
+            <h4>Test it on a later exam</h4>
+            <p>Results from this file may not carry over to another school or a future exam. Start with a small local trial and keep teachers in charge.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-number" aria-hidden="true">3</span>
+          <div>
+            <h4>Check whether the help works</h4>
+            <p>Track who receives help, how students do afterward, staff time, and cost. This project has not measured better grades or money saved.</p>
+          </div>
+        </li>
+      </ol>
+      <p class="reading-links">Background reading: <a href="https://ies.ed.gov/ncee/wwc/PracticeGuide/24">IES guide on checking progress and offering help</a> and <a href="https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/one-to-one-tuition">EEF guide to one-to-one tutoring</a>.</p>
     </section>
 
-    <section class="section wrap" aria-labelledby="next-title">
-      <div class="section-heading">
-        <p class="eyebrow">04 / What comes next</p>
-        <h2 id="next-title">A school needs to try it carefully.</h2>
-        <p>A better list could help staff use their time well. A school would still need to check whether the help improves students’ results.</p>
-      </div>
-      <div class="next-steps">
-        <article><h3>Check where the records came from</h3><p>The source and dates of this file are unverified. A school must confirm that its own records are reliable and were collected before the exam.</p></article>
-        <article><h3>Test it on a later exam</h3><p>Results from this file may not carry over to another school or a future exam. Start with a small local trial and keep teachers in charge.</p></article>
-        <article><h3>Check whether the help works</h3><p>Track who receives help, how students do afterward, staff time, and cost. This project has not measured better grades or money saved.</p></article>
-      </div>
-      <div class="reading-links">
-        <span>Background reading on student support</span>
-        <a href="https://ies.ed.gov/ncee/wwc/PracticeGuide/24">IES guide: checking progress and offering help</a>
-        <a href="https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/one-to-one-tuition">EEF guide: one-to-one tutoring</a>
-      </div>
-    </section>
-
-    <section id="resources" class="resources-section section wrap" aria-labelledby="resources-title">
-      <div>
-        <p class="eyebrow">05 / Project files</p>
-        <h2 id="resources-title">Want to see the work?</h2>
-        <p>The full analysis, code, and instructions are available here.</p>
-      </div>
+    <section id="files" class="section column" aria-labelledby="files-title">
+      <h2 id="files-title">Want to see the work?</h2>
+      <p class="intro">The full analysis, code, and instructions are available here.</p>
       <div class="resource-links">
-        <a href="downloads/student_support_queue.ipynb" download><h3>Download the notebook</h3><p>A document with the analysis and Python code. Upload it to Kaggle and add a copy of the source CSV you are allowed to use.</p></a>
+        <a href="downloads/student_support_queue.ipynb" download><h3>Download the notebook</h3><p>The analysis and Python code in one document. Upload it to Kaggle and add a copy of the source CSV you are allowed to use.</p></a>
         <a href="https://github.com/SmtTheSE/student-support-queue"><h3>See the code on GitHub</h3><p>The code, result tables, and steps to repeat the analysis.</p></a>
         <a href="downloads/student_support_product.zip" download><h3>Download the full project</h3><p>The notebook, trained tool, result tables, and instructions. The original student CSV is not included.</p></a>
       </div>
