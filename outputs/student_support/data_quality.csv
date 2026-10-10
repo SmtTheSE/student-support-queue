@@ -1,0 +1,9 @@
+check,value
+Records,100000
+Columns,44
+Repeated complete rows,0
+Repeated student IDs,0
+Records missing at least one value,41940
+Score / pass-status disagreements,0
+Correct answers exceed attempted answers,0
+Undergraduates younger than 18,23092

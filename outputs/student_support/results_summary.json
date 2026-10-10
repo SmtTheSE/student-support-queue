@@ -1,0 +1,75 @@
+{
+  "source": "student_exam_performance.csv",
+  "source_sha256": "59194c1ecab01b34fa2486e40b9b764a09a7f3763d4886552332856b2d94598d",
+  "source_provenance": "Unverified",
+  "rows": 100000,
+  "columns": 44,
+  "recorded_failures": 22611,
+  "recorded_failure_rate": 0.22611,
+  "outcome": "exam_score < 50",
+  "selected_model": "Study-record logistic",
+  "features": [
+    "previous_exam_score",
+    "previous_gpa",
+    "attendance_percentage",
+    "assignment_completion_rate",
+    "study_hours_per_day",
+    "self_study_hours",
+    "practice_tests_completed",
+    "class_participation",
+    "study_consistency",
+    "revision_frequency",
+    "notes_quality"
+  ],
+  "capacity_fraction": 0.1,
+  "split_records": {
+    "Training": 60000,
+    "Calibration": 10000,
+    "Selection": 10000,
+    "Final test": 20000
+  },
+  "heldout_selected_policy": {
+    "slots": 2000.0,
+    "failures_in_queue": 1353.0,
+    "nonfailures_in_queue": 647.0,
+    "failures_outside_queue": 3169.0,
+    "precision_at_capacity": 0.6765,
+    "recall_at_capacity": 0.29920389208314907,
+    "lift_over_random": 2.9920389208314906
+  },
+  "extra_failures_reached_vs_administrative": 191,
+  "test_probability_metrics": {
+    "roc_auc": 0.8176849319851851,
+    "average_precision": 0.5706382151405021,
+    "brier_score": 0.1328963022337964,
+    "log_loss": 0.4122140123629473
+  },
+  "bootstrap_intervals": {
+    "Queue precision": {
+      "95% lower": 0.657,
+      "95% upper": 0.696525
+    },
+    "Failure recall": {
+      "95% lower": 0.2905309064834177,
+      "95% upper": 0.30841700986773213
+    },
+    "Precision gain over administrative baseline": {
+      "95% lower": 0.07747500000000002,
+      "95% upper": 0.11552499999999992
+    }
+  },
+  "business_assumptions": {
+    "cohort_size": 1000,
+    "capacity_fraction": 0.1,
+    "participation_rate": 0.7,
+    "setup_cost": 1500,
+    "cost_per_offered_slot": 40
+  },
+  "versions": {
+    "python": "3.12.14",
+    "pandas": "3.0.6",
+    "numpy": "2.5.3",
+    "scikit_learn": "1.9.1"
+  },
+  "deployment_status": "Prototype; source and pre-exam timing unverified; prospective pilot required"
+}

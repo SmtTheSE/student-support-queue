@@ -1,0 +1,4 @@
+,95% lower,95% upper
+Queue precision,0.657,0.696525
+Failure recall,0.2905309064834177,0.30841700986773213
+Precision gain over administrative baseline,0.07747500000000002,0.11552499999999992

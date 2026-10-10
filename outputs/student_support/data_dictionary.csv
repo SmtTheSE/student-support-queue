@@ -1,0 +1,45 @@
+column,type,missing_percent,unique_values,product_role
+student_id,str,0.0,100000,Identifier only
+age,int64,0.0,7,Group audit only
+gender,str,0.0,3,Group audit only
+education_level,str,0.0,2,Group audit only
+school_type,str,0.0,3,Group audit only
+family_income,str,0.0,5,Group audit only
+parent_education,str,6.53,5,Group audit only
+urban_rural,str,0.0,3,Group audit only
+previous_exam_score,float64,0.0,6153,Administrative predictor: pre-exam timing required
+previous_gpa,float64,7.79,296,Administrative predictor: pre-exam timing required
+attendance_percentage,float64,9.86,3911,Administrative predictor: pre-exam timing required
+assignment_completion_rate,float64,0.0,6384,Administrative predictor: pre-exam timing required
+class_participation,str,0.0,3,Optional study predictor: pre-exam timing required
+study_hours_per_day,float64,0.0,1073,Optional study predictor: pre-exam timing required
+self_study_hours,float64,0.0,856,Optional study predictor: pre-exam timing required
+private_tuition,int64,0.0,2,Excluded: ambiguous timing or unnecessary collection
+online_learning_hours,float64,0.0,1330,Excluded: ambiguous timing or unnecessary collection
+study_consistency,str,0.0,3,Optional study predictor: pre-exam timing required
+study_environment,str,0.0,3,Excluded: ambiguous timing or unnecessary collection
+study_method,str,0.0,5,Excluded: ambiguous timing or unnecessary collection
+revision_frequency,str,0.0,3,Optional study predictor: pre-exam timing required
+practice_tests_completed,int64,0.0,21,Optional study predictor: pre-exam timing required
+notes_quality,str,8.41,3,Optional study predictor: pre-exam timing required
+sleep_hours,float64,0.0,793,Excluded: ambiguous timing or unnecessary collection
+sleep_quality,str,6.99,4,Excluded: ambiguous timing or unnecessary collection
+daily_screen_time,float64,0.0,1009,Excluded: ambiguous timing or unnecessary collection
+physical_activity_hours,float64,0.0,1197,Excluded: ambiguous timing or unnecessary collection
+break_frequency,str,0.0,3,Excluded: ambiguous timing or unnecessary collection
+stress_level,int64,0.0,6,Excluded: ambiguous timing or unnecessary collection
+motivation_level,str,0.0,3,Excluded: ambiguous timing or unnecessary collection
+internet_access,int64,0.0,2,Accessible support routing only
+device_availability,str,2.96,2,Accessible support routing only
+educational_app_usage,str,0.0,3,Excluded: ambiguous timing or unnecessary collection
+online_course_hours,float64,0.0,1804,Excluded: ambiguous timing or unnecessary collection
+exam_difficulty,str,0.0,3,Excluded: ambiguous timing or unnecessary collection
+exam_preparation_days,int64,0.0,30,Excluded: ambiguous timing or unnecessary collection
+questions_attempted,int64,0.0,16,Outcome or current-exam leakage: excluded from features
+questions_correct,int64,0.0,101,Outcome or current-exam leakage: excluded from features
+time_management_score,float64,9.61,6204,Excluded: ambiguous timing or unnecessary collection
+exam_anxiety_level,float64,0.0,759,Excluded: ambiguous timing or unnecessary collection
+exam_score,float64,0.0,8086,Outcome or current-exam leakage: excluded from features
+performance_grade,str,0.0,5,Outcome or current-exam leakage: excluded from features
+pass_status,str,0.0,2,Outcome or current-exam leakage: excluded from features
+performance_level,str,0.0,3,Outcome or current-exam leakage: excluded from features
