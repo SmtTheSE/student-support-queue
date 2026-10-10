@@ -10,12 +10,20 @@ The Claude product page supplies the more restrained presentation used here. The
 | Reference detail | Project treatment |
 | --- | --- |
 | Warm off-white page, dark near-black text | `#faf9f5` page and `#141413` text |
-| Centered serif product headline, roughly 68px at desktop, weight 500, 1.1 line height | Source Serif 4 headline, 40–76px responsive scale, weight 500 |
+| Centered serif product headline, roughly 68px at desktop, weight 500, 1.1 line height | Source Serif 4 headline, 34–68px responsive scale, weight 500 |
 | Sans-serif descriptions and navigation | Locally hosted Inter; 13px navigation and 15–20px introduction |
-| Compact dark buttons, 8px corners, roughly 8px by 16px padding | Text-only buttons with 8px corners and 10px by 16px padding |
+| Compact dark buttons, 8px corners, roughly 8px by 16px padding | Text-only buttons with 8px corners and 11px by 17px padding |
 | Quiet borders and warm secondary controls | Thin neutral borders, beige secondary button, subtle hover changes |
 | Clear reading hierarchy | Serif section titles and figures, sans-serif body text and chart labels |
 
 Decorative arrow glyphs have been removed from all buttons, resource links, and the footer. The scoring results, evaluation limitations, downloads, and keyboard-operated capacity explorer are retained.
 
 The original brand fonts, logos, illustrations, and site copy are not included. Inter and Source Serif 4 are open-licensed alternatives; their licenses are in `assets/fonts/`.
+
+## Plain-language reading order
+
+The page now follows five questions: What is the problem? How would a teacher use the tool? What did the saved-record test show? What must a school check next? Where are the project files?
+
+The main comparison shows only this tool and the simpler school-record approach, using the same number of places. Labels and a complete sentence explain the counts without assuming statistics knowledge. Extra percentages, the test design, charts, and the command-line example are available in native expandable sections. Uncertainty, unverified source data, and the absence of measured grade improvements remain visible or plainly explained.
+
+The presentation uses one stylesheet, a three-step workflow, consistent reading widths, and short paragraphs. Notebook and model artifacts retain the full technical analysis.

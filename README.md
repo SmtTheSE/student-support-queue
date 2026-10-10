@@ -77,6 +77,8 @@ The buildless website lives in `docs/` and is published by GitHub Pages from `ma
 
 The presentation takes inspiration from Anthropic and Claude's public websites: warm off-white backgrounds, serif headlines, sans-serif reading text, compact text-only controls, and restrained navigation. Inter and Source Serif 4 are hosted locally under the SIL Open Font License; licenses are included in `docs/assets/fonts/`. Reference details are recorded in `docs/DESIGN.md`.
 
+The public page explains the problem, teacher workflow, results, next checks, and downloads in everyday language. Detailed charts and statistical measures are in expandable sections and the notebook. The support-place slider uses the same saved-record results as the analysis.
+
 Preview locally:
 
 ```bash
