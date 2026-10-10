@@ -28,12 +28,16 @@ strong{font-weight:600}
 .header-link{padding:9px 15px;white-space:nowrap}
 .skip-link{position:absolute;top:-100px;left:16px;background:var(--ink);color:var(--paper);padding:10px 16px;z-index:10}
 .skip-link:focus{top:16px}
-.hero{text-align:center;padding-block:72px 65px;max-width:1000px}
+.hero{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);align-items:center;gap:36px;text-align:left;padding-block:53px 57px}
+.hero-copy{position:relative;z-index:1}
+.hero-mascot{position:relative;isolation:isolate;margin:0}
+.hero-mascot::before{content:"";position:absolute;z-index:-1;inset:15% 6% 5%;background:#eeeade;border-radius:48% 48% 43% 43%}
+.hero-mascot img{width:100%;max-width:390px;margin-inline:auto}
 .hero .eyebrow{margin-bottom:22px}
-.hero h1{font-size:clamp(42px,5.2vw,68px);line-height:1.08;letter-spacing:-.03em}
-.lead{font-size:20px;line-height:1.5;max-width:610px;margin:25px auto 0}
+.hero h1{font-size:clamp(42px,4.6vw,62px);line-height:1.08;letter-spacing:-.03em}
+.lead{font-size:20px;line-height:1.5;max-width:610px;margin:25px 0 0}
 .hero-note{font-size:15px;color:var(--muted);margin-top:12px}
-.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:25px}
+.actions{display:flex;justify-content:flex-start;gap:12px;flex-wrap:wrap;margin-top:25px}
 .project-status{font-size:12px;color:var(--muted);margin-top:20px}
 .story-section{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
 .section-title h2{font-size:37px;margin-top:16px}
@@ -109,7 +113,7 @@ pre{padding:22px;background:#e9e5da;border:1px solid #dad6c9;border-radius:10px;
 @media(max-width:1050px){
   .wrap{width:calc(100% - 72px)}
   .site-header{gap:22px}.site-header nav{gap:20px;font-size:12px}.identity{font-size:25px}
-  .hero{padding-block:65px 58px}.hero h1{font-size:58px}
+  .hero{padding-block:50px;gap:24px}.hero h1{font-size:clamp(39px,4.7vw,52px)}
   .section{padding-block:64px}.story-section{gap:50px}.section-title h2{font-size:34px}
   .workflow,.next-steps{gap:25px}.workflow h3{font-size:17px}.capacity-controls{gap:35px}
   .resources-section{gap:45px}.result-numbers strong{font-size:44px}
@@ -118,7 +122,7 @@ pre{padding:22px;background:#e9e5da;border:1px solid #dad6c9;border-radius:10px;
   .wrap{width:calc(100% - 40px)}
   .site-header{flex-wrap:wrap;justify-content:space-between;gap:18px;min-height:0;padding-block:20px}.identity{font-size:24px}.identity span{font-size:10px}
   .site-header nav{order:3;width:100%;margin-left:0;justify-content:space-between;gap:14px;padding-top:3px;font-size:13px}.header-link{font-size:12px;padding:9px 13px}
-  .hero{padding-block:49px 44px}.hero .eyebrow{font-size:10px;margin-bottom:20px}.hero h1{font-size:clamp(36px,7.8vw,54px)}
+  .hero{grid-template-columns:1fr;gap:22px;text-align:center;padding-block:42px 35px}.hero-mascot{width:220px;justify-self:center}.hero .actions{justify-content:center}.hero .lead{margin-inline:auto}.hero .eyebrow{font-size:10px;margin-bottom:20px}.hero h1{font-size:clamp(36px,7.8vw,54px)}
   .lead{font-size:18px;margin-top:23px}.hero-note{font-size:14px}.button{font-size:12px;padding:11px 15px}.project-status{font-size:11px}
   .section{padding-block:49px}.story-section{grid-template-columns:1fr;gap:20px}.section-title h2{font-size:32px}.reading-copy{padding:0;font-size:16px;max-width:none}
   .section-heading{margin-bottom:28px}.section-heading h2{font-size:34px}.section-heading>p:not(.eyebrow){font-size:15px}

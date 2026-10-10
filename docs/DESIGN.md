@@ -27,3 +27,9 @@ The page now follows five questions: What is the problem? How would a teacher us
 The main comparison shows only this tool and the simpler school-record approach, using the same number of places. Labels and a complete sentence explain the counts without assuming statistics knowledge. Extra percentages, the test design, charts, and the command-line example are available in native expandable sections. Uncertainty, unverified source data, and the absence of measured grade improvements remain visible or plainly explained.
 
 The presentation uses one stylesheet, a three-step workflow, consistent reading widths, and short paragraphs. Notebook and model artifacts retain the full technical analysis.
+
+## Student mascot
+
+The hero pairs its plain-language introduction with an original Blender character: a student holding a notebook and waving. Chestnut hair, an oatmeal cardigan, a sage skirt, and a terracotta notebook follow the existing warm palette. The pale oval background is CSS so the transparent render sits naturally on the page.
+
+The mascot appears beside the text on wider screens and below the main links on phones. It is a static WebP image with fixed intrinsic dimensions, descriptive alt text, and no extra JavaScript. The editable scene and generation script are in `art/mascot/`.
